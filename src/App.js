@@ -1,11 +1,11 @@
 import React from "react";
-//import * as ReactRouter from "react-router-dom";
-
+import NavBar from "./components/Navbar/";
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <>
+      <NavBar/>
+    </>
   );
 }
 
