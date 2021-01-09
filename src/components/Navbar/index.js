@@ -12,14 +12,14 @@ class NavBar extends Component {
     
     return (
       <div className="nav-container">
-        <div className="navs logo"></div>
+        <div className="navs logo">Logo</div>
         <ul>
           {navContent}
         </ul>
         <div className="menu">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className="part"></span>
+          <span className="part"></span>
+          <span className="part"></span>
         </div>
       </div>
       );
