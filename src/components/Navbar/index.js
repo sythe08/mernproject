@@ -3,6 +3,21 @@ import "./index.css";
 import NavBarConfig from "./config.js";
 
 class NavBar extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      isOpen: false
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(){
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+
   render(){
     const navContent = NavBarConfig.map((section, index) => {
       return (
@@ -13,10 +28,11 @@ class NavBar extends Component {
     return (
       <div className="nav-container">
         <div className="navs logo">Logo</div>
-        <ul>
+        <ul className={this.state.isOpen ? "active" : "hidden"}>
+          <div className="close" onClick={this.handleClick}>x</div>
           {navContent}
         </ul>
-        <div className="menu">
+        <div className="menu" onClick={this.handleClick}>
           <span className="part"></span>
           <span className="part"></span>
           <span className="part"></span>

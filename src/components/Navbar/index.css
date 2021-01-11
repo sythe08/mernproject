@@ -9,10 +9,10 @@ a {
 }
 
 .nav-container {
-  display: flex;
+  display: flex;  
   flex-direction: row;
-  background: #333;
-  justify-content: space-around;
+  background: #242A31;
+  justify-content: space-between;
   align-items: center;
   height: 70px;
 }
@@ -23,6 +23,13 @@ a {
   align-items: center;
   padding: 5px;
   margin: 0;
+  margin-right: -30%;
+  justify-self: flex-end;
+  transition: 0.3s;
+}
+
+.nav-container > ul > .close {
+  display: none;
 }
 
 .navs {
@@ -30,21 +37,42 @@ a {
   padding: 0.2rem 0.2rem;
 }
 
-.navs:hover {
-  background: #929292;
+.navs > a {
+  font-size: 0.5rem;
+}
+
+.navs:nth-child(2):hover,
+.navs:nth-child(3):hover,
+.navs:nth-child(4):hover,
+.navs:nth-child(5):hover {
+  border-bottom: 2px solid whitesmoke;
   transition: linear 0.3s;
+  padding: 7px;
 }
 
 .logo {
+  cursor: pointer;
   position: relative;
   font-weight: 400;
-  flex: 1;
+  float: left;
   margin-left: 20px;
+  color: rgba(230, 242, 252, 0.589);
 }
 
 .logo:hover {
-  background: #333;
+  background: transparent;
+  border-bottom: none;
 }
+
+.active {
+  display: flex;
+}
+
+.inactive {
+  display: none;
+  right: -120%;
+}
+
 
 .menu {
   display: none;
@@ -56,7 +84,16 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-right: 20px;
+  margin-right: 30px;
+}
+
+.active {
+  display: flex!important;
+  transition: 0.3s!important;
+}
+
+.hidden {
+  display: none;
 }
 
 .menu .part {
@@ -69,11 +106,44 @@ a {
 }
 
 @media only screen and (max-width: 730px){
+
   .nav-container > ul {
+    position: absolute;
     display: none;
+    background: #242424;
+    margin: 0;
+    flex-wrap: wrap;
+    top: 0;
+    z-index: 2;
+    right: 0;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .nav-container > ul > .close {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    top: 0;
+    font-weight: 200;
+    left: 20px;
+    font-weight: 200;
+  }
+
+  .nav-container > ul > .close:hover {
+    border: none;
+    outline: none;
   }
 
   .nav-container > .menu {
+    cursor: pointer;
     display: block;
   }
 
@@ -81,4 +151,5 @@ a {
     display: block;
     background: whitesmoke;
   }
+
 }
