@@ -23,7 +23,6 @@ a {
   align-items: center;
   padding: 5px;
   margin: 0;
-  margin-right: -30%;
   justify-self: flex-end;
   transition: 0.3s;
 }
@@ -33,20 +32,20 @@ a {
 }
 
 .navs {
-  margin: 0.3rem;
+  margin: 0.5rem;
   padding: 0.2rem 0.2rem;
 }
 
 .navs > a {
-  font-size: 0.5rem;
+  font-size: 0.4rem;
 }
 
 .navs:nth-child(2):hover,
 .navs:nth-child(3):hover,
 .navs:nth-child(4):hover,
-.navs:nth-child(5):hover {
-  border-bottom: 2px solid whitesmoke;
-  transition: linear 0.3s;
+.navs:nth-child(5):hover {  
+  border-bottom: 1px solid whitesmoke;
+  transition: cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s;
   padding: 7px;
 }
 
@@ -56,6 +55,7 @@ a {
   font-weight: 400;
   float: left;
   margin-left: 20px;
+  font-size: 0.8rem;
   color: rgba(230, 242, 252, 0.589);
 }
 
@@ -80,7 +80,6 @@ a {
   height: 50px;
   width: 50px;  
   border-radius: 3px;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -106,6 +105,10 @@ a {
 }
 
 @media only screen and (max-width: 730px){
+
+  .nav-container > .menu {
+    display: flex;
+  }
 
   .nav-container > ul {
     position: absolute;

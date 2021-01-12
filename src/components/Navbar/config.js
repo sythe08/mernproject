@@ -1,6 +1,5 @@
 const NavBarConfig = [
-  {name: "Home", path: "/home" },
-  {name: "Github", path: "/about-me" },
+  {name: "Home", path: "/home"},
   {name: "Projects", path: "/projects" }, 
   {name: "Contact Me", path: "/contact-me" }
 ];
