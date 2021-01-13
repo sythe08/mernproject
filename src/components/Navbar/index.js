@@ -28,7 +28,7 @@ class NavBar extends Component {
       <div className="nav-container">
         <div className="navs logo">Logo</div>
         <ul className={this.state.isOpen ? "active" : "hidden"}>
-          <div className="close" onClick={this.handleClick}>x</div>
+          <div className="close" onClick={this.handleClick}>&times;</div>
           {navContent}
           <li className="navs"><a href="https://github.com/sythe08" rel="noreferrer" target="_blank">Github</a></li>
         </ul>

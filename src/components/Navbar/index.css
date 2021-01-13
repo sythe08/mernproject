@@ -37,13 +37,40 @@ a {
 }
 
 .navs > a {
-  font-size: 0.4rem;
+  font-size: 0.6rem;
+}
+
+.navs:nth-child(5){
+  border: none;
+  border-radius: 8px;
+  padding: 0.2rem 1.5rem;
+  background: white;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.navs:nth-child(5) > a{
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  color: #242A31;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navs:nth-child(5):hover{
+  background: #000000;
+  transition: all 0.3s ease;
+}
+.navs:nth-child(5):hover > a{
+  color: white;
+  transition: all 0.4s ease;
 }
 
 .navs:nth-child(2):hover,
 .navs:nth-child(3):hover,
-.navs:nth-child(4):hover,
-.navs:nth-child(5):hover {  
+.navs:nth-child(4):hover {  
   border-bottom: 1px solid whitesmoke;
   transition: cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s;
   padding: 7px;
@@ -83,7 +110,8 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-right: 30px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
 }
 
 .active {
@@ -99,9 +127,13 @@ a {
   display: none;
   position: relative;
   height: 5px;
-  width: 100%;
+  width: 80%;
   background: #444;
   margin-top: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  outline: none;
+  border: none;
 }
 
 @media only screen and (max-width: 730px){
@@ -124,6 +156,7 @@ a {
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
+    transition: all 0.3s ease;
   }
   .nav-container > ul > .close {
     display: block;
@@ -138,6 +171,7 @@ a {
     font-weight: 200;
     left: 20px;
     font-weight: 200;
+    font-size: 1.5rem;
   }
 
   .nav-container > ul > .close:hover {
