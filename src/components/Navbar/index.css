@@ -105,22 +105,15 @@ a {
   display: none;
   position: relative;
   height: 50px;
-  width: 50px;  
+  width: 45px;  
   border-radius: 3px;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-right: 10px;
   transition: all 0.3s ease;
-}
-
-.active {
-  display: flex!important;
-  transition: 0.3s!important;
-}
-
-.hidden {
-  display: none;
+  align-self: center;
+  justify-self: center;
 }
 
 .menu .part {
@@ -129,7 +122,6 @@ a {
   height: 5px;
   width: 80%;
   background: #444;
-  margin-top: 10px;
   border-radius: 8px;
   text-decoration: none;
   outline: none;
@@ -139,7 +131,7 @@ a {
 @media only screen and (max-width: 730px){
 
   .nav-container > .menu {
-    display: flex;
+    display: flex!important;
   }
 
   .nav-container > ul {
@@ -182,11 +174,23 @@ a {
   .nav-container > .menu {
     cursor: pointer;
     display: block;
+    background: transparent;
   }
 
   .nav-container .menu .part {
     display: block;
     background: whitesmoke;
+    outline: none;
+    border: none;
   }
+  
+  
+.active {
+  display: flex!important;
+}
+
+.hidden {
+  display: none;
+}
 
 }
