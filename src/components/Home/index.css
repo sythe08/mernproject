@@ -1,0 +1,60 @@
+
+.hero-section {
+  flex-direction: column;
+}
+
+.hero-section .hero-body {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid grey;
+  height: 100%;
+  width: 99%;
+}
+
+.hero-body-content {
+  /*border: 1px solid grey;*/
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 92vw;
+  align-self: center;
+}
+
+.heading{
+  align-self: flex-start;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.heading span {
+  position: relative;
+  font-size: inherit;
+  color: #1349f7;
+}
+
+.heading span:hover {
+  color: #426efa;
+  transition: 0.3s all ease-out;
+}
+
+.info {
+  position: relative;
+  align-self: flex-start;
+  width: 250px;
+  font-size: 0.5rem;
+  font-weight: 300;
+  margin-top: -5px;
+  line-height: 25px;
+}
+
+.btn {
+  align-self: center;
+  font-weight: 400;
+  font-size: 0.6rem;
+  letter-spacing: 4px;
+}

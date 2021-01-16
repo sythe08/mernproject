@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import "./index.css";
 import NavBarConfig from "./config.js";
+import {FaArrowCircleLeft, FaReact} from "react-icons/fa/";
 
 class NavBar extends Component {
   constructor(props){
@@ -26,11 +27,11 @@ class NavBar extends Component {
 
     return (
       <div className="nav-container">
-        <div className="navs logo">Logo</div>
+        <div className="navs logo"><FaReact/></div>
         <ul className={this.state.isOpen ? "active" : "hidden"}>
-          <div className="close" onClick={this.handleClick}>&times;</div>
+          <div className="close" onClick={this.handleClick}><FaArrowCircleLeft/></div>
           {navContent}
-          <li className="navs"><a href="https://github.com/sythe08" rel="noreferrer" target="_blank">Github</a></li>
+          <li className="navs"><a href="https://github.com/sythe08" rel="noreferrer" target="_blank">Contact Me</a></li>
         </ul>
         <div className="menu" onClick={this.handleClick}>
           <span className="part"></span>

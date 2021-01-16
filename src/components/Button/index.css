@@ -1,0 +1,50 @@
+:root {
+  --dark: #000000;
+  --light: #ffffff;
+  --normal: #1349f7;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.btn-dark {
+  color: var(--light);
+  background: var(--dark);
+}
+
+.btn-light {
+  color: var(--dark);
+  background: none;
+  border: 1px solid var(--dark);
+}
+
+.btn-normal {
+  color: var(--light);
+  background: var(--normal);
+}
+
+.btn-small {
+  height: 40px;
+  width: 130px;
+  padding: 6px 13px;
+  font-size: 0.5rem;
+}
+
+.btn-medium {
+  height: 40px;
+  width: 150px;
+  padding: 7px 23px;
+  font-size: 0.5rem;
+}
+
+.btn-large {
+  height: 50px;
+  width: 170px;
+  padding: 8px 23px;
+  font-size: 0.5rem;
+}
