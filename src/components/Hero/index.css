@@ -8,14 +8,18 @@
   align-items: center;
 }
 
-.light {
+.hero-section.light {
   background: #ffffff;
 }
 
-.dark {
+.hero-section.light > * {
+  color: #000000;
+}
+
+.hero-section.dark {
   background: #242a31;
 }
 
-.dark > * {
+.hero-section.dark > * {
   color: #ffffff;
 }

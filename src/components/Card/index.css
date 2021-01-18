@@ -1,14 +1,13 @@
 
 .card-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background: #ffffff;
   width: 330px;
-  height: 540px;
-  align-self: center;
-  justify-self: center;
+  height: 450px;
   border-radius: 9px;
 }
 
@@ -27,7 +26,21 @@
 }
 
 .card-preview-image {
-  flex: 3;
+  position: relative;
+  display: flex;
+  flex: 2;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-preview-image > img {
+  position: relative;
+  height: 95%;
+  width: 95%;
+  border-radius: 3px;
 }
 
 .card-container > * {
@@ -44,8 +57,8 @@
   align-self: center;
   justify-self: center;
   /*background: #1349f7;*/
-  padding: 3px 16px;
-  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
 }
 
 .tools {
@@ -57,28 +70,29 @@
   justify-content: center;
   text-align: center;
   justify-self: center;
-  flex: 1;
+  flex: 0.5;
 }
 
-.btn {
+.card-container .card-body > .btn {
+  position: relative;
   font-size: 0.5rem;
   letter-spacing: 2px;
   line-height: 0;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
-.dark {
-  background: #242a31;
+.card-container.dark {
+  background: #000000;
 }
 
-.dark > * {
+.card-container.dark > * {
   color: #ffffff;
 }
 
-.light {
+.card-container.light {
   background: #ffffff;
 }
 
-.light > * {
+.card-container.light > * {
   color: #242A31;
 }

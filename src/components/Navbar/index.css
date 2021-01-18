@@ -9,7 +9,7 @@ a {
 }
 
 .nav-container {
-  display: flex;  
+  display: flex;
   flex-direction: row;
   background: #242A31;
   justify-content: space-between;
@@ -24,7 +24,7 @@ a {
   padding: 5px;
   margin: 0;
   justify-self: flex-end;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .nav-container > ul > .close {
@@ -40,7 +40,7 @@ a {
   font-size: 0.6rem;
 }
 
-.navs:nth-child(5){
+.navs:nth-child(5) {
   border: none;
   border-radius: 4px;
   padding: 0.3rem 1.2rem;
@@ -49,7 +49,7 @@ a {
   transition: all 0.3s ease;
 }
 
-.navs:nth-child(5) > a{
+.navs:nth-child(5) > a {
   position: relative;
   align-self: center;
   justify-self: center;
@@ -59,18 +59,18 @@ a {
   transition: all 0.3s ease;
 }
 
-.navs:nth-child(5):hover{
+.navs:nth-child(5):hover {
   background: #000000;
   transition: all 0.2s ease;
 }
-.navs:nth-child(5):hover > a{
+.navs:nth-child(5):hover > a {
   color: #ffffff;
   transition: all 0.2s ease;
 }
 
 .navs:nth-child(2):hover,
 .navs:nth-child(3):hover,
-.navs:nth-child(4):hover {  
+.navs:nth-child(4):hover {
   border-bottom: 1px solid whitesmoke;
   transition: cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s;
   padding: 7px;
@@ -89,22 +89,24 @@ a {
   background: transparent;
   border-bottom: none;
 }
-
+/*
 .active {
   display: flex;
+  transition: all 0.3s ease-out;
 }
 
-.inactive {
+.hidden {
   display: none;
   right: -120%;
+  transition: all 0.3s ease-in!important;
 }
-
+*/
 
 .menu {
   display: none;
   position: relative;
   height: 50px;
-  width: 45px;  
+  width: 45px;
   border-radius: 3px;
   flex-direction: column;
   align-items: center;
@@ -127,12 +129,12 @@ a {
   border: none;
 }
 
-@media only screen and (max-width: 730px){
+@media only screen and (max-width: 730px) {
 
- .nav-container {
-   width: 100vw;
-   height: 60px;
- }
+  .nav-container {
+    width: 100vw;
+    height: 60px;
+  }
 
   .nav-container > .menu {
     display: flex!important;
@@ -146,13 +148,11 @@ a {
     flex-wrap: wrap;
     top: 0;
     z-index: 2;
-    right: 0;
     flex-direction: column;
     height: 100vh;
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
-    transition: all 0.3s ease;
   }
   .nav-container > ul > .close {
     display: block;
@@ -170,11 +170,6 @@ a {
     font-size: 1.5rem;
   }
 
-  .nav-container > ul > .close:hover {
-    border: none;
-    outline: none;
-  }
-
   .nav-container > .menu {
     cursor: pointer;
     display: block;
@@ -187,14 +182,17 @@ a {
     outline: none;
     border: none;
   }
-  
-  
-.active {
-  display: flex!important;
-}
 
-.hidden {
-  display: none;
-}
+  .active {
+    display: flex!important;
+    right: 0;
+    transition: all 0.3s ease;
+  }
+
+  .hidden {
+    display: none;
+    right: -120%;
+    transition: all 0.3s ease;
+  }
 
 }

@@ -8,8 +8,13 @@ function Card({
   cardDescription, 
   cardPreviewImage, 
   tools, 
-  cardBg
+  cardBg, 
+  githubUrl
 }){
+  
+  const visitGithub = () =>{
+   window.location.href = githubUrl ? githubUrl : window.location.href;
+  }
   
   return (
     <div className={`card-container ${cardBg}`}>
@@ -21,7 +26,7 @@ function Card({
         <FaDiscord/>
         <FaJs/>
       </div>
-      <Button btnSize="btn-large" btnColor={cardBg === "light" ? "btn-light" : "btn-dark"} >Visit Github</Button>
+      <Button clickHandler={visitGithub} btnSize="btn-large" btnColor={cardBg === "light" ? "btn-light" : "btn-dark"}>Visit Github</Button>
       </div>
     </div>
     )
