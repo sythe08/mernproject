@@ -38,7 +38,7 @@ function Projects() {
   return (
     <div className="project-section">
       <h1>Projects</h1>
-      {ProjectList}
+      <div className="project-list">{ProjectList}</div>
     </div>
     )
 }
