@@ -3,8 +3,13 @@
 :root {
   --dark: #000000;
   --light: #ffffff;
-  --normal: #1349f7;
-  --green: #17d705
+  --medium_light: #f7eaead2;
+  --normal: blue;
+  --green: #17d705;
+  --blue_ryb: #473BF0;
+  --blue_bell: #9B9ECE;
+  --blue_crayola: #ACADBC;
+  --blue_medium_state: #6665DD;
 }
 
 * {

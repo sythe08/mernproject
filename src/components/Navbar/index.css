@@ -11,7 +11,7 @@ a {
 .nav-container {
   display: flex;
   flex-direction: row;
-  background: #242A31;
+  background: var(--blue_ryb)/*#242A31*/;
   justify-content: space-between;
   align-items: center;
   height: 80px;
@@ -44,8 +44,7 @@ a {
   border: none;
   border-radius: 4px;
   padding: 0.3rem 1.2rem;
-  background: #ffffff;
-  text-align: center;
+  background: var(--blue_medium_state);
   transition: all 0.3s ease;
 }
 
@@ -53,18 +52,19 @@ a {
   position: relative;
   align-self: center;
   justify-self: center;
-  color: #000000;
+  color: var(--light);
   font-size: 0.6rem;
-  font-weight: 400;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .navs:nth-child(5):hover {
-  background: #000000;
+  background: var(--light);
   transition: all 0.2s ease;
 }
+
 .navs:nth-child(5):hover > a {
-  color: #ffffff;
+  color: var(--dark);
   transition: all 0.2s ease;
 }
 
@@ -73,7 +73,6 @@ a {
 .navs:nth-child(4):hover {
   border-bottom: 1px solid whitesmoke;
   transition: cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.3s;
-  padding: 7px;
 }
 
 .logo {
@@ -143,7 +142,7 @@ a {
   .nav-container > ul {
     position: fixed;
     display: none;
-    background: #242424;
+    background: var(--blue_ryb);
     margin: 0;
     flex-wrap: wrap;
     top: 0;
@@ -184,7 +183,7 @@ a {
   }
 
   .active {
-    display: flex!important;
+    display: flex !important;
     right: 0;
     transition: all 0.3s ease;
   }

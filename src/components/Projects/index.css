@@ -1,11 +1,11 @@
 .project-section {
   position: relative;
   width: 100vw;
-  background: #242a31;
+  background: var(--blue_ryb);
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: center;
+  align-items: center;  
 }
 
 .project-section .project-list {
@@ -42,6 +42,7 @@
   color: var(--light);
   font-size: 0.6rem;
   margin: 20px;
+  font-weight: 400;
 }
 
 .project-body {

@@ -56,5 +56,6 @@
   align-self: center;
   font-weight: 400;
   font-size: 0.6rem;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
+  cursor: pointer;
 }

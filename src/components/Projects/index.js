@@ -6,14 +6,11 @@ function Project({heading, description, previewImage, githubUrl, cName, tools}) 
   
   return (
     <>
-     <div className={`project ${cName === "dark"? "project-dark" : "project-light"}`} >
+     <div key={Math.random()} className={`project ${cName === "dark"? "project-dark" : "project-light"}`} >
       <h1>{heading}</h1>
       <div className="project-body">
         <div className="project-image" style={{background: `url(${previewImage})`, backgroundRepeat: "no-repeat"}} >
         </div>
-        <div className="tools">
-          {tools}
-        </div> 
       </div>
       <div className="project-description" >
           <p>{description}</p>
@@ -28,7 +25,7 @@ function Projects() {
   
   const ProjectList = projectData.map((project, index)=>{
     return (<Project 
-    key={index+39384} heading={project.heading} description={project.description}
+    key={index+Math.random()} heading={project.heading} description={project.description}
     githubUrl={project.githubUrl} cName={project.cName}
     previewImage={project.previewImage}
     tools={project.tools}
