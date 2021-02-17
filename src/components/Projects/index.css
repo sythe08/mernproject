@@ -1,6 +1,6 @@
 .project-section {
   position: relative;
-  width: 100vw;
+  width: 100%;
   background: var(--blue_ryb);
   display: flex;
   flex-direction: column;
@@ -32,8 +32,8 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 30vw;
-  height: 50vh;
+  width: 27vw;
+  height: 45vh;
   transition: all 0.3s ease-in;
   margin: 10px;
 }

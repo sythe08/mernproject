@@ -27,7 +27,7 @@ class NavBar extends Component {
 
     return (
       <div className="nav-container">
-        <div className="navs logo"><FaReact/></div>
+        <div className="navs logo"><FaReact/> Benjie Ben</div>
         <ul className={this.state.isOpen ? "active" : "hidden"}>
           <div className="close" onClick={this.handleClick}><FaArrowCircleLeft/></div>
           {navContent}

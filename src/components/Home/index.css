@@ -4,17 +4,16 @@
 }
 
 .hero-section .hero-body {
+  position: relative;
   display: flex;
   position: relative;
   flex-direction: column;
   justify-content: space-evenly;
-  border: 1px solid grey;
   height: 100%;
   width: 100%;
 }
 
 .hero-body-content {
-  /*border: 1px solid grey;*/
   height: 200px;
   display: flex;
   justify-content: space-evenly;
@@ -54,8 +53,17 @@
 
 .btn {
   align-self: center;
-  font-weight: 400;
-  font-size: 0.6rem;
+  font-weight: 500;
+  font-size: 0.4rem;
   letter-spacing: 5px;
   cursor: pointer;
+  box-shadow: 3px 3px 10px #3e3e3e;
+  outline: none;
+  border: none;
+}
+
+.hero-body > .btn:hover {
+  background: var(--light) !important;
+  color: var(--dark);
+  border: none;
 }
