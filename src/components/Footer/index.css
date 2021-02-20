@@ -1,0 +1,39 @@
+.footer-wrap {
+    position: relative;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 20px 20px;
+}
+
+.footer > .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-content li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 8px;
+    padding: 4px 4px;
+}
+
+
+.footer-logo span, .footer-content li a {
+    font-size: 0.5rem;
+}
+
+.footer > .footer-content li a {
+    color: var(--dark);
+    font-weight: 300;
+}
