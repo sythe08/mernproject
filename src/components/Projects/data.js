@@ -5,22 +5,22 @@ class ProjectData {
     this.description = description || "Coming Soon!";
     this.previewImage = previewImage;
     this.githubUrl = githubUrl;
-    this.cName = ((arr)=>arr[Math.floor(Math.random() * arr.length)])(["dark", "light"]);
+    this.cName = "light";
   }
 }
 
 const projectData = [
   new ProjectData("Discord Bot",
    "This project is still in development, if you want to contribute just click the button bellow.",
-   "https://i.imgur.com/di2u4fy_d.webp?maxwidth=640&shape=thumb&fidelity=medium",
+   "https://i.imgur.com/0SRsVrE.png",
    "https://github.com/sythe08"),
   new ProjectData("Website made with ReactJs",
     "This project is still in development, if you want to contribute just click the button bellow.",
-    "https://i.imgur.com/di2u4fy_d.webp?maxwidth=640&shape=thumb&fidelity=medium",
+    "https://i.imgur.com/0SRsVrE.png",
     "https://github.com/sythe08"),
   new ProjectData("",
     "This project is still in development, if you want to contribute just click the button bellow.",
-    "https://i.imgur.com/di2u4fy_d.webp?maxwidth=640&shape=thumb&fidelity=medium",
+    "https://i.imgur.com/0SRsVrE.png",
     "https://github.com/sythe08")
 ];
 
