@@ -18,8 +18,5 @@
     font-size: 32px;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 3px;
-}
-
-#root {
-  position: absolute;
+    scroll-behavior: smooth;
 }
