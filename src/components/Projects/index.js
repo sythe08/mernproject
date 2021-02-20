@@ -9,7 +9,7 @@ function Project({heading, description, previewImage, githubUrl, cName, tools}) 
      <div key={Math.random()} className={`project ${cName === "dark"? "project-dark" : "project-light"}`} >
       <h1>{heading}</h1>
       <div className="project-body">
-        <div className="project-image" style={{background: `url(${previewImage})`, backgroundRepeat: "no-repeat"}} >
+        <div className="project-image" style={{background: `url(${previewImage})`, backgroundRepeat: "no-repeat", backgroundSize: "cover"}} >
         </div>
       </div>
       <div className="project-description" >
@@ -33,7 +33,7 @@ function Projects() {
   });
   
   return (
-    <div className="project-section">
+    <div id="project" className="project-section">
       <h1>Projects</h1>
       <div className="project-list">{ProjectList}</div>
     </div>
