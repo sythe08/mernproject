@@ -1,6 +1,8 @@
 
 .hero-section {
-  flex-direction: column;
+  position: relative;
+  height: 100vh;
+
 }
 
 .hero-section .hero-body {
@@ -51,19 +53,17 @@
   line-height: 25px;
 }
 
-.btn {
+.hero-body > .explore-wrap {
+  display: flex;
   align-self: center;
-  font-weight: 500;
-  font-size: 0.4rem;
-  letter-spacing: 5px;
-  cursor: pointer;
-  box-shadow: 3px 3px 10px #3e3e3e;
-  outline: none;
-  border: none;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-body > .btn:hover {
-  background: var(--light) !important;
-  color: var(--dark);
-  border: none;
+.hero-body > .explore-wrap > span {
+  font-size: 0.6rem;
+  border-bottom: 1px solid var(--dark);
+  margin-bottom: 5px;
+  padding: 5px 5px;
 }

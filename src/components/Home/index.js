@@ -1,20 +1,20 @@
-import React from "react";
-import Hero from "../Hero";
-import Button from "../Button";
+import {FaArrowCircleDown} from "react-icons/fa";
 import "./index.css";
 
 function Home() {
-  
   return (
-      <Hero bgColor="light">
+      <div className="hero-section">
         <div className="hero-body">
           <div className="hero-body-content" >
-            <h1 className="heading" >Hi! My name is<span> Benjie Ben</span></h1>
-            <p className="info" >I am an aspiring Web developer with a few experience in Web development.</p>
+            <h1 className="heading" >Lorem ipsum<span> Lorem ipsum</span></h1>
+            <p className="info" >Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
           </div>
-          <Button btnColor="btn-light" btnSize="btn-large">Explore</Button>
+          <div className="explore-wrap">
+            <a className="exploreBtn" href="#project"><FaArrowCircleDown style={{color: "var(--dark)"}}/></a>
+            <span>Explore</span>
+          </div>
         </div>
-      </Hero>
+      </div>
     )
 }
 
