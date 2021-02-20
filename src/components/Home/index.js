@@ -6,8 +6,8 @@ function Home() {
       <div className="hero-section">
         <div className="hero-body">
           <div className="hero-body-content" >
-            <h1 className="heading" >Lorem ipsum<span> Lorem ipsum</span></h1>
-            <p className="info" >Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+            <h1 className="heading" >Hi! I am <span>Benjie Ben</span></h1>
+            <p className="info" >I am an aspiring Web Developer with a few experience in web development.</p>
           </div>
           <div className="explore-wrap">
             <a className="exploreBtn" href="#project"><FaArrowCircleDown style={{color: "var(--dark)"}}/></a>

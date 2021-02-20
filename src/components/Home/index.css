@@ -36,6 +36,8 @@
   position: relative;
   font-size: inherit;
   color: #1349f7;
+  padding: 6px 2px;
+  border-bottom: 1px solid var(--dark);
 }
 
 .heading span:hover {
